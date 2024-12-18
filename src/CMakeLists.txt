@@ -13,5 +13,8 @@ target_sources(vulkan_shenanigans PUBLIC
     main.cpp)
 target_sources(vulkan_shenanigans PUBLIC
     FILE_SET CXX_MODULES
-    FILES HelloTriangleApplication.cppm)
+    FILES
+      HelloTriangleApplication.cppm
+      HelloTriangleApplicationConstants.cppm
+      HelloTriangleApplicationDebug.cppm)
 target_link_libraries(vulkan_shenanigans PRIVATE glfw VulkanHppModule)
